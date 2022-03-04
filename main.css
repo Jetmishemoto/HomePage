@@ -1,0 +1,14 @@
+.navbar{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+.navbar button{
+    background-color:  purple;
+    color: aliceblue;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
