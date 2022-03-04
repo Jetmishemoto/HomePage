@@ -1,3 +1,15 @@
+/* overflow-x hidden disables the ablity to scroll left to right */
+html, body{
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, p, button, a{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .navbar{
     display:  flex;
     align-items: center;
@@ -6,9 +18,61 @@
     margin: 0 auto;
     padding: 0 25px;
 }
+
 .navbar button{
     background-color:  purple;
-    color: aliceblue;
+    color: white;
     padding: 10px 25px;
-    border-radius: 15px;
+    border-radius: 25px;
+    border: 0px;
+}
+.navbar .transparent-btn{
+    background-color:  transparent;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+
+
+
+.content::before{
+    content: '';
+    background-color: purple;
+    position: absolute;
+    border-radius: 9000px;
+    top: -850px;
+    left: -250px; 
+    transform: rotate(-70deg);
+    height: 1900px;
+    width: 100vw;
+    z-index: -1;
+
+}
+
+.content{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: white;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+.content h1{
+    font-weight: bold;
+    
+}
+.content h4{
+    margin: 20px 0px;
+}
+.content button{
+
+    background-color:  transparent;
+    color: white;
+    /* padding 10px(top and bottom) 25px(left to right) in that order  */
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid blue;
+
 }
