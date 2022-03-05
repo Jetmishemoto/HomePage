@@ -42,13 +42,16 @@ h1, h2, h3, h4, h5, p, button, a{
     position: absolute;
     border-radius: 9000px;
     top: -850px;
-    left: -250px; 
+    left: -450px; 
     transform: rotate(-70deg);
     height: 1900px;
-    width: 100vw;
+    width: 1900px;
+    
     z-index: -1;
 
 }
+
+
 
 .content{
     
@@ -59,6 +62,12 @@ h1, h2, h3, h4, h5, p, button, a{
     margin: 0 auto;
     align-items: center;
 }
+
+.c-img{
+    margin-left: 4%;
+}
+
+
 .content h1{
     font-weight: bold;
     
@@ -75,4 +84,47 @@ h1, h2, h3, h4, h5, p, button, a{
     border-radius: 25px;
     border: 1px solid blue;
 
+}
+
+
+
+
+
+.box-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: 1400px;
+    margin: 250px auto 120px auto;
+    align-items: center;
+}
+
+.box-row > div:nth-last-of-type(2){
+ position: relative;
+ top: -75px;
+
+}
+
+
+
+
+
+
+
+.inner-box{
+    background-color: white;
+    box-shadow: rgba(0, 225, 255, 0.301) 10px 10px 10px ;
+    border-radius: 15px;
+    padding: 50px 25px;
+    text-align: center;
+
+}
+.inner-box h4{
+     color: blue;
+}
+
+.inner-box img{
+    margin: 0 auto;
+    display: block;
+    
 }
