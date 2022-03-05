@@ -35,10 +35,11 @@ h1, h2, h3, h4, h5, p, button, a{
 }
 
 
-
+/* BG Elements---------------------- */
 .content::before{
     content: '';
     background-color: purple;
+    filter: blur(90px);
     position: absolute;
     border-radius: 9000px;
     top: -850px;
@@ -50,6 +51,22 @@ h1, h2, h3, h4, h5, p, button, a{
     z-index: -1;
 
 }
+.bg-content2::before{
+    content: '';
+    background-color: rgba(0, 0, 255, 0.603);
+    filter: blur(90px);
+    position: absolute;
+    border-radius: 6000px;
+    top: -450px;
+    left: 150px; 
+    transform: rotate(-70deg);
+    height: 1900px;
+    width: 1900px;
+    
+    z-index: -1;
+
+}
+/* BG Elements-------------------------- */
 
 
 
@@ -137,5 +154,6 @@ h1, h2, h3, h4, h5, p, button, a{
     .content{
         grid-template-columns: repeat(1,100%);
     }
+    
     
 }
