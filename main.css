@@ -1,3 +1,4 @@
+
 /* overflow-x hidden disables the ablity to scroll left to right */
 html, body{
     overflow-x: hidden;
@@ -25,13 +26,25 @@ h1, h2, h3, h4, h5, p, button, a{
     padding: 10px 25px;
     border-radius: 25px;
     border: 0px;
+    font-size: 14px;
+}
+.navbar a{
+    background: linear-gradient(90deg, rgb(148, 47, 206) 0%, rgba(230, 209, 24, 0.842));
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(108, 19, 160);
+    text-decoration: none;
+    font-size: 14px;
+    border: 0px;
+
 }
 .navbar .transparent-btn{
     background-color:  transparent;
     color: white;
     padding: 10px 25px;
     border-radius: 25px;
-    border: 1px solid rgb(108, 19, 160);
+    border: 1px solid rgba(230, 208, 14, 0.603);
 }
 
 
@@ -82,6 +95,12 @@ h1, h2, h3, h4, h5, p, button, a{
 
 
 } 
+
+.bg-content4::before{
+    
+ content: "";     
+    
+}
 /* BG Elements-------------------------- */
 
 
@@ -194,7 +213,7 @@ h1, h2, h3, h4, h5, p, button, a{
 
 
 
-
+/* @media is used for make the site responsive to diff devices */
 @media screen and (max-width: 1024px) {
 
 
