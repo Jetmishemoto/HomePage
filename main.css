@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, p, button, a{
 }
 .bg-content2::before{
     content: '';
-    background-color: rgba(230, 208, 14, 0.603);
+    background-color: rgba(230, 208, 14, 0.842);
     filter: blur(90px);
     position: absolute;
     border-radius: 6000px;
@@ -94,6 +94,10 @@ h1, h2, h3, h4, h5, p, button, a{
     max-width: 1400px;
     margin: 0 auto;
     align-items: center;
+
+    /*       100px on the top */
+    /*             25px left and right  */
+    /*                  0px on the bottom */
     padding: 100px 25px 0;
 }
 
@@ -116,7 +120,8 @@ h1, h2, h3, h4, h5, p, button, a{
 
     background-color:  transparent;
     color: white;
-    /* padding 10px(top and bottom) 25px(left to right) in that order  */
+/*padding    10px(top and bottom) 
+              ^   25px(left to right) in that order  */
     padding: 10px 25px;
     border-radius: 25px;
     border: 1px solid rgba(230, 208, 14, 0.603);
@@ -134,6 +139,7 @@ h1, h2, h3, h4, h5, p, button, a{
     max-width: 1400px;
     margin: 250px auto 120px auto;
     align-items: center;
+    padding: 0 25px;
 }
 
 
@@ -141,6 +147,7 @@ h1, h2, h3, h4, h5, p, button, a{
 /*     target the div:nth-last-of-type(2) in the box-row  */
 .box-row > div:nth-last-of-type(2){
  position: relative;
+ 
  top: -75px;
 
 }
@@ -153,7 +160,7 @@ h1, h2, h3, h4, h5, p, button, a{
 
 .inner-box{
     background-color: white;
-    box-shadow: rgba(211, 211, 211, 0.301) 10px 10px 10px ;
+    box-shadow: rgba(255, 255, 255, 0.479) 10px 10px 10px ;
     border-radius: 15px;
     padding: 50px 25px;
     text-align: center;
@@ -189,9 +196,44 @@ h1, h2, h3, h4, h5, p, button, a{
 
 
 @media screen and (max-width: 1024px) {
-    .content{
+
+
+
+
+    .content, .box-row{
         grid-template-columns: repeat(1,100%);
     }
+    .box-row > div:nth-last-of-type(2){
+        top: 0;
+    }
+    .box-row > div:nth-last-of-type(3){
+        grid-column: 1/ span 2;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+
     
+}
+
+
+@media screen and (max-width: 640px) {
+
+
+    .navbar .transparent-btn{
+        display: none;
+    }
+
+
+    .content, .box-row{
+        grid-template-columns: repeat(1,100%);
+    }
+
+    .box-row > div:nth-last-of-type(3){
+        grid-column: 1/  2;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     
 }
