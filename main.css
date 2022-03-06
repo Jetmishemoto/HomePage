@@ -122,8 +122,15 @@ h1, h2, h3, h4, h5, p, button, a{
 }
 
 .f-bottom{
+    filter: blur();
+    background: linear-gradient(90deg, rgb(148, 47, 206) 0%, rgba(230, 209, 24, 0.842));
     color: white;
     text-align: center;
+    border-radius: 20px;
+    margin: 0 450px;
+    padding: 0 100px;
+    
+    border: 1px solid rgba(230, 208, 14, 0.603);
    
 
 }
@@ -211,8 +218,10 @@ h1, h2, h3, h4, h5, p, button, a{
     grid-template-columns: repeat(1,1fr);
     max-width: 1400px;
     margin: 150px auto 120px auto;
-    padding: 50px 25px;
+    padding: 50px 10px;
     text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.479) 10px 10px 10px ;
+    
 
 }
 
@@ -259,6 +268,9 @@ h1, h2, h3, h4, h5, p, button, a{
     .box-row > div:nth-last-of-type(3){
         grid-column: 1/  2;
         max-width: 100%;
+        margin: 0 auto;
+    }
+    .f-bottom{
         margin: 0 auto;
     }
 
