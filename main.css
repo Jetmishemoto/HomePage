@@ -118,6 +118,14 @@ h1, h2, h3, h4, h5, p, button, a{
     /*             25px left and right  */
     /*                  0px on the bottom */
     padding: 100px 25px 0;
+    min-height: calc(100vh - 104px - 19px);
+}
+
+.f-bottom{
+    color: white;
+    text-align: center;
+   
+
 }
 
 .content img{
