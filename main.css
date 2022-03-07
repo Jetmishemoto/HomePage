@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, p, button, a{
     text-decoration: none;
     font-size: 14px;
     border: 0px ;
+    box-shadow: rgba(89, 16, 131, 0.747) 10px 10px 10px ;
 
 }
 .navbar .transparent-btn{
