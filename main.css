@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, p, button, a{
     border: 1px solid rgb(108, 19, 160);
     text-decoration: none;
     font-size: 14px;
-    border: 0px;
+    border: 0px ;
 
 }
 .navbar .transparent-btn{
@@ -164,8 +164,6 @@ h1, h2, h3, h4, h5, p, button, a{
 
 
 
-
-
 .box-row{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -251,6 +249,18 @@ h1, h2, h3, h4, h5, p, button, a{
 
     
 }
+@media screen and (max-width: 686px){
+
+    .navbar a{
+        margin: auto 10px auto;
+        
+    }
+    .navbar .transparent-btn{
+        margin: 15px auto;
+
+    }   
+
+}
 
 
 @media screen and (max-width: 640px) {
@@ -258,6 +268,9 @@ h1, h2, h3, h4, h5, p, button, a{
 
     .navbar .transparent-btn{
         display: none;
+    }
+    .navbar a{
+        margin: 20px 10px;
     }
 
 
