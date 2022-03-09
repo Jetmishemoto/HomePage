@@ -220,12 +220,15 @@ h1, h2, h3, h4, h5, p, button, a{
     margin: 150px 700px 120px;
     padding: 50px 10px;
     text-align: center;
-     box-shadow: rgba(89, 16, 131, 0.747) 10px 10px 10px ;
+    box-shadow: rgba(255, 255, 255, 0.479) 10px 10px 10px ;
     
 }
 .bottom-content button{
     margin: 10px;
     background-color:   rgb(108, 19, 160);
+    border: 1px solid rgba(230, 208, 14, 0.603);
+    box-shadow: rgba(89, 16, 131, 0.747) 10px 10px 10px ;
+
     color: white;
     padding: 10px 25px;
     border-radius: 25px;
