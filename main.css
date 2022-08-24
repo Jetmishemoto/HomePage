@@ -246,6 +246,12 @@ h1, h2, h3, h4, h5, p, button, a{
 
 /* @media is used for make the site responsive to diff devices */
 /* -------------------------------------------------------------------------------- */
+@media screen and (max-width: 1814px) {  
+    .bottom-content{
+        margin: 0 auto 70px;
+     } }
+
+
 @media screen and (max-width: 1024px) {
 
 
@@ -264,12 +270,18 @@ h1, h2, h3, h4, h5, p, button, a{
     }
     
 
+    .bottom-content{
+        margin: 0 auto 70px;
+     }
 
     
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1028px) {
 
-    
+    .bottom-content{
+        margin: 0 auto 70px;
+     }
+
 }
 @media screen and (max-width: 686px){
 
@@ -281,6 +293,10 @@ h1, h2, h3, h4, h5, p, button, a{
         margin: 15px auto;
 
     }   
+    .bottom-content{
+        margin: 0 auto 70px;
+     }
+
 
 }
 
@@ -308,9 +324,7 @@ h1, h2, h3, h4, h5, p, button, a{
     .f-bottom{
         margin: 0 auto;
     }
-    .bottom-content{
-        margin: 0 auto 70px;
-     }
+  
 
     
 }
