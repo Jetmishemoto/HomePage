@@ -274,13 +274,35 @@ h1, h2, h3, h4, h5, p, button, a{
         margin: 0 auto 70px;
      }
 
+     .f-bottom{
+        margin: 0 auto;
+    }
+
+
     
 }
+
+
+
+@media screen and (max-width: 1286px) {
+
+    .f-bottom{
+        margin: 0 auto;
+    }
+
+
+
+}
+
 @media screen and (max-width: 1028px) {
 
     .bottom-content{
         margin: 0 auto 70px;
      }
+
+     .f-bottom{
+        margin: 0 auto;
+    }
 
 }
 @media screen and (max-width: 686px){
@@ -295,7 +317,12 @@ h1, h2, h3, h4, h5, p, button, a{
     }   
     .bottom-content{
         margin: 0 auto 70px;
-     }
+    }
+
+     .f-bottom{
+        margin: 0 auto;
+    }
+  
 
 
 }
